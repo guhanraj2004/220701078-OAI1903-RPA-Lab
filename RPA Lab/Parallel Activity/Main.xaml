@@ -1,0 +1,253 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1904,3181" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1914,3116" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="text2" />
+      <Variable x:TypeArguments="x:String" Name="text1" />
+      <Variable x:TypeArguments="x:String" Name="text3" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Parallel sap:VirtualizedContainerService.HintSize="1852,877" sap2010:WorkflowViewState.IdRef="Parallel_1">
+      <Sequence sap:VirtualizedContainerService.HintSize="546,830" sap2010:WorkflowViewState.IdRef="Sequence_4">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Use Browser Edge: What is Robotic Process Automation - RPA Software | UiPath" sap:VirtualizedContainerService.HintSize="484,719" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="86e2f574-019f-4721-84bd-516aaff6da43" Version="V2">
+          <uix:NApplicationCard.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,461" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="x:String" Name="text1" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="388,25" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+                <uix:NGetText DisplayName="Get Text 'Get the white paper'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="86e2f574-019f-4721-84bd-516aaff6da43" TextString="[text1]" Version="V3">
+                  <uix:NGetText.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.uipath.com/rpa/robotic-process-automation" DesignTimeRectangle="902, 1349, 1264, 352" DesignTimeScaleFactor="2" ElementType="Text" FriendlyName="'What is'" FullSelectorArgument="&lt;webctrl tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H2' type='' class='sc-tfo41-11 fuZduC sc-runa9q-1 ccUHdO paragrapghBlock__Title' /&gt;" Guid="751ce1fa-3f1e-4938-bb7e-f9816f4bd2c6" ImageBase64="" InformativeScreenshot="14d9ca13e80b6368d6a9ac2b1c71f945.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='What is Robotic Process Automation - RPA Software | UiPath' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                          <uix:Target DesignTimeRectangle="742, 997, 482, 96" ElementType="Text" FriendlyName="'Get the white paper'" FullSelectorArgument="&lt;webctrl aaname='Get the white paper' parentid='gatsby-focus-wrapper' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Get the white paper' parentid='gatsby-focus-wrapper' tag='A' type='' class='sc-19d6789-0 jbDatY CTA ' check:innerText='Get the white paper' /&gt;" SearchSteps="FuzzySelector" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NGetText.Target>
+                </uix:NGetText>
+                <uix:NNavigateBrowser Action="CloseTab" DisplayName="Navigate Browser - Close Tab" sap:VirtualizedContainerService.HintSize="388,83" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" Version="V3" />
+              </Sequence>
+            </ActivityAction>
+          </uix:NApplicationCard.Body>
+          <uix:NApplicationCard.TargetApp>
+            <uix:TargetApp Area="-13, -13, 3098, 1850" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGSSURBVFhH7ZexSwMxGMU7iJM4iCRX6egkUm4WJ5HLVYqDf0BxcHZycnWQIk7i4OgkDo4OIk4OTg4dnUWcxEFESK7El/D1LtdDUa+9Ir0Hb8h7X5JfS9ujFRkwPUqXAP0AbSnYxlBt7nDuTANgoDJkEcQYAKiAt3DmFXwkhTdNcTEAUcDqfee2qfo5ANYn8A15k+KM0J0lc9zux6tvYp2cG7BzOwz9BuDe6fYozgjdYzLHt02mhTeFdYfyD5y7aoehQgCMdMOblIL7KqzOUmRVGEAkeD0KPd8YEDMUFweA9VsvV4K3KC4BSoD/BXDrdMcUZ4QuvggAWxQPBODC6a4pTikK2Zwzg4tYk6r8ACpgO07XjUR1kapYyA+cGa3Waoyq/AAyZDVkyumfzFuM3MeBS1gfwl2nv6StVljnAzBCtp/qv/Y7fvcXaJsVsvwAujE/gdw8lpOZrF9kyFdoSyzk+QF6QrcMn8IP8Cv8DJtvyS4+K/GDxhW6O9g8kjsAWKf4bwCDVAnwPcDI/5iMwOMOwPQnFLezb0DhfhIAAAAASUVORK5CYII=" InformativeScreenshot="97ca21e970c53d65c20f61284c77c80a.jpg" Selector="&lt;html app='msedge.exe' title='What is Robotic Process Automation - RPA Software | UiPath' /&gt;" Title="UiPath | 404" Url="https://www.uipath.com/rpa/robotic-process-automation" />
+          </uix:NApplicationCard.TargetApp>
+        </uix:NApplicationCard>
+      </Sequence>
+      <Sequence sap:VirtualizedContainerService.HintSize="546,830" sap2010:WorkflowViewState.IdRef="Sequence_3">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Use Browser Edge: What is Process Mining - RPA and Process Mining | UiPath" sap:VirtualizedContainerService.HintSize="484,719" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="86e2f574-019f-4721-84bd-516aaff6da43" Version="V2">
+          <uix:NApplicationCard.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,461" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="388,25" sap2010:WorkflowViewState.IdRef="MaximizeWindow_2" />
+                <uix:NGetText DisplayName="Get Text 'What is Process Mining?'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="86e2f574-019f-4721-84bd-516aaff6da43" TextString="[text2]" Version="V3">
+                  <uix:NGetText.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.uipath.com/rpa/what-is-process-mining" DesignTimeRectangle="917, 823, 1234, 128" DesignTimeScaleFactor="2" ElementType="Text" FriendlyName="'What is Process Mining?'" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='sc-tfo41-10 jnHIWY sc-1tinugz-2 ldxfYT' /&gt;" Guid="b1d260d8-5383-4a99-92a8-2b9cd3f4154b" InformativeScreenshot="b6eb527a8108130f2bc021f43d0a986a.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='What is Process Mining - RPA and Process Mining | UiPath' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                  </uix:NGetText.Target>
+                </uix:NGetText>
+                <uix:NNavigateBrowser Action="CloseTab" DisplayName="Navigate Browser - Close Tab" sap:VirtualizedContainerService.HintSize="388,83" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_2" Version="V3" />
+              </Sequence>
+            </ActivityAction>
+          </uix:NApplicationCard.Body>
+          <uix:NApplicationCard.TargetApp>
+            <uix:TargetApp Area="-13, -13, 3098, 1850" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGSSURBVFhH7ZexSwMxGMU7iJM4iCRX6egkUm4WJ5HLVYqDf0BxcHZycnWQIk7i4OgkDo4OIk4OTg4dnUWcxEFESK7El/D1LtdDUa+9Ir0Hb8h7X5JfS9ujFRkwPUqXAP0AbSnYxlBt7nDuTANgoDJkEcQYAKiAt3DmFXwkhTdNcTEAUcDqfee2qfo5ANYn8A15k+KM0J0lc9zux6tvYp2cG7BzOwz9BuDe6fYozgjdYzLHt02mhTeFdYfyD5y7aoehQgCMdMOblIL7KqzOUmRVGEAkeD0KPd8YEDMUFweA9VsvV4K3KC4BSoD/BXDrdMcUZ4QuvggAWxQPBODC6a4pTikK2Zwzg4tYk6r8ACpgO07XjUR1kapYyA+cGa3Waoyq/AAyZDVkyumfzFuM3MeBS1gfwl2nv6StVljnAzBCtp/qv/Y7fvcXaJsVsvwAujE/gdw8lpOZrF9kyFdoSyzk+QF6QrcMn8IP8Cv8DJtvyS4+K/GDxhW6O9g8kjsAWKf4bwCDVAnwPcDI/5iMwOMOwPQnFLezb0DhfhIAAAAASUVORK5CYII=" InformativeScreenshot="b1572b4a91c777ee30ed75c88bb33db4.jpg" Selector="&lt;html app='msedge.exe' title='What is Process Mining - RPA and Process Mining | UiPath' /&gt;" Title="UiPath | 404" Url="https://www.uipath.com/rpa/what-is-process-mining" />
+          </uix:NApplicationCard.TargetApp>
+        </uix:NApplicationCard>
+      </Sequence>
+      <Sequence sap:VirtualizedContainerService.HintSize="546,830" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Use Browser Edge: Navigate RPA Journey &amp; Steps - Automation Process | UiPath" sap:VirtualizedContainerService.HintSize="484,719" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="86e2f574-019f-4721-84bd-516aaff6da43" Version="V2">
+          <uix:NApplicationCard.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,461" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="388,25" sap2010:WorkflowViewState.IdRef="MaximizeWindow_3" />
+                <uix:NGetText DisplayName="Get Text 'How to'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="86e2f574-019f-4721-84bd-516aaff6da43" TextString="[text3]" Version="V3">
+                  <uix:NGetText.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.uipath.com/rpa/journey" DesignTimeRectangle="742, 823, 1584, 384" DesignTimeScaleFactor="2" ElementType="Text" FriendlyName="'How to'" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='sc-tfo41-10 jnHIWY sc-1tinugz-2 ldxfYT' /&gt;" Guid="91f14373-c46c-4ec8-bf50-f9edd679b497" InformativeScreenshot="43c3f768cd7da839400762a73101d8ad.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Navigate RPA Journey &amp;amp; Steps - Automation Process | UiPath' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                  </uix:NGetText.Target>
+                </uix:NGetText>
+                <uix:NNavigateBrowser Action="CloseTab" DisplayName="Navigate Browser - Close Tab" sap:VirtualizedContainerService.HintSize="388,83" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_3" Version="V3" />
+              </Sequence>
+            </ActivityAction>
+          </uix:NApplicationCard.Body>
+          <uix:NApplicationCard.TargetApp>
+            <uix:TargetApp Area="-13, -13, 3098, 1850" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGSSURBVFhH7ZexSwMxGMU7iJM4iCRX6egkUm4WJ5HLVYqDf0BxcHZycnWQIk7i4OgkDo4OIk4OTg4dnUWcxEFESK7El/D1LtdDUa+9Ir0Hb8h7X5JfS9ujFRkwPUqXAP0AbSnYxlBt7nDuTANgoDJkEcQYAKiAt3DmFXwkhTdNcTEAUcDqfee2qfo5ANYn8A15k+KM0J0lc9zux6tvYp2cG7BzOwz9BuDe6fYozgjdYzLHt02mhTeFdYfyD5y7aoehQgCMdMOblIL7KqzOUmRVGEAkeD0KPd8YEDMUFweA9VsvV4K3KC4BSoD/BXDrdMcUZ4QuvggAWxQPBODC6a4pTikK2Zwzg4tYk6r8ACpgO07XjUR1kapYyA+cGa3Waoyq/AAyZDVkyumfzFuM3MeBS1gfwl2nv6StVljnAzBCtp/qv/Y7fvcXaJsVsvwAujE/gdw8lpOZrF9kyFdoSyzk+QF6QrcMn8IP8Cv8DJtvyS4+K/GDxhW6O9g8kjsAWKf4bwCDVAnwPcDI/5iMwOMOwPQnFLezb0DhfhIAAAAASUVORK5CYII=" InformativeScreenshot="38f4fca8d29e4322fe485d90bee19b4f.jpg" Selector="&lt;html app='msedge.exe' title='Navigate RPA Journey &amp;amp; Steps - Automation Process | UiPath' /&gt;" Title="UiPath | 404" Url="https://www.uipath.com/rpa/journey" />
+          </uix:NApplicationCard.TargetApp>
+        </uix:NApplicationCard>
+      </Sequence>
+    </Parallel>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Untitled - Notepad" sap:VirtualizedContainerService.HintSize="1852,2088" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" ScopeGuid="69b2dd2f-a8da-4635-aaa2-15499e0dbf78" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,1795" sap2010:WorkflowViewState.IdRef="Sequence_8">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,227" sap2010:WorkflowViewState.IdRef="NTypeInto_1" Text="[text1]" Version="V3" />
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="388,180" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3" />
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,227" sap2010:WorkflowViewState.IdRef="NTypeInto_3" Text="[text2]" Version="V3" />
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="388,180" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3" />
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,227" sap2010:WorkflowViewState.IdRef="NTypeInto_2" Text="[text3]" Version="V3" />
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="388,180" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" Shortcuts="[d(hk)][d(ctrl)]s[u(ctrl)][u(hk)]" Version="V3" />
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Edit'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,219" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="69b2dd2f-a8da-4635-aaa2-15499e0dbf78" Text="parallel activity - texts.txt" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="266, 712, 1210, 34" DesignTimeScaleFactor="2" ElementType="InputBox" FriendlyName="'Edit'" FullSelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" Guid="a5958181-bf3f-42ca-beee-26ad857c869f" InformativeScreenshot="8fe6385a8367eb04ebb6a666dd289f50.png" ScopeSelectorArgument="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='Save as' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="1254, 262, 1628, 1332" FilePath="Microsoft.WindowsNotepad_8wekyb3d8bbwe!App" IconBase64="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" InformativeScreenshot="a52156d61c9165ad860aa3bd66f5ea87.png" Selector="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='Untitled - Notepad' /&gt;" Title="Untitled - Notepad" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

@@ -1,0 +1,151 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="851,1712" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="546,1647" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Mcdonals - Google Search" sap:VirtualizedContainerService.HintSize="484,1536" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="aacb4a1a-2bdf-44ce-83ff-9c84bf693cb2" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,1318" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'INPUT'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aacb4a1a-2bdf-44ce-83ff-9c84bf693cb2" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://pizzaonline.dominos.co.in/" DesignTimeRectangle="252, 992, 1017, 100" DesignTimeScaleFactor="2" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl class='srch-cnt-srch-inpt' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl class='srch-cnt-srch-inpt' tag='INPUT' type='' aaname='' /&gt;" Guid="68cfd89b-f3f4-4c54-935d-bf68bfe5a484" InformativeScreenshot="3b563608a230de344b67453907a46e73.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Domino&amp;apos;s ZERO Contact Delivery - Great Taste, Delivered Safe' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,219" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="aacb4a1a-2bdf-44ce-83ff-9c84bf693cb2" Text="Kilpauk" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://pizzaonline.dominos.co.in/?src=google_sem_brand&amp;utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=Brand-PanIndia-Desktop-Exact-2016-S&amp;gad_source=1&amp;gclid=CjwKCAjwko21BhAPEiwAwfaQCMyr5bDwK6FCecoNBDNsJWimvknSdgT5-_-DUEWSiZnSfOZmWuC33hoC0_sQAvD_BwE" DesignTimeRectangle="2181, 740, 767, 96" DesignTimeScaleFactor="2" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="b34dcb69-4a03-4267-9218-2c8dc69f8cbe" InformativeScreenshot="20e93fdf4dba9a1197da8adbcf297660.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Domino&amp;apos;s ZERO Contact Delivery - Great Taste, Delivered Safe' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'KilpaukChennai, Tamil'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aacb4a1a-2bdf-44ce-83ff-9c84bf693cb2" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://pizzaonline.dominos.co.in/" DesignTimeRectangle="2181, 1006, 733, 142" DesignTimeScaleFactor="2" ElementType="ListItem" FriendlyName="'KilpaukChennai, Tamil'" FullSelectorArgument="&lt;webctrl tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LI' type='' class='' aaname='' check:innerText='Kilpauk&amp;#xD;&amp;#xA;Chennai, Tamil Nadu, India' /&gt;" Guid="0478767c-0c55-465d-89cc-7b05135e0301" ImageBase64="" InformativeScreenshot="c8ec864b1281c16a2ba21e8aa31572eb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Domino&amp;apos;s ZERO Contact Delivery - Great Taste, Delivered Safe' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,219" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="aacb4a1a-2bdf-44ce-83ff-9c84bf693cb2" Text="Newry Sampreeti Apartment" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://pizzaonline.dominos.co.in/" DesignTimeRectangle="2181, 787, 767, 96" DesignTimeScaleFactor="2" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl idx='2' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl class='' tag='INPUT' type='text' aaname='' /&gt;" Guid="43d4afee-a3bf-4e14-93fa-05e04327efac" InformativeScreenshot="cbaf43402848c7b3a38cf1122720008d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Domino&amp;apos;s ZERO Contact Delivery - Great Taste, Delivered Safe' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="2181, 636, 767, 96" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl idx='2' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl class='' tag='INPUT' type='text' aaname='' /&gt;" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Newry Sampreeti'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aacb4a1a-2bdf-44ce-83ff-9c84bf693cb2" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://pizzaonline.dominos.co.in/" DesignTimeRectangle="2181, 1157, 767, 142" DesignTimeScaleFactor="2" ElementType="ListItem" FriendlyName="'Newry Sampreeti'" FullSelectorArgument="&lt;webctrl tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LI' type='' class='' aaname='' check:innerText='Newry Sampreeti Apartment&amp;#xD;&amp;#xA;Kilpauk Garden Road, Aspiran Garden Colony, Kilpauk, Chennai, Tamil Nadu,' /&gt;" Guid="82f5ddbe-d5c1-4d1e-9da5-602acfc0e654" ImageBase64="" InformativeScreenshot="c2658b981cfbc4a88637700651ab808f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Domino&amp;apos;s ZERO Contact Delivery - Great Taste, Delivered Safe' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <Delay Duration="01:00:00" sap:VirtualizedContainerService.HintSize="388,91" sap2010:WorkflowViewState.IdRef="Delay_1" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-13, -13, 3098, 1850" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAA14SURBVGhDvZcJXFVVHseviogLgriAyvJA9n0REMEHiLKJgq1WI9LUZ9SpScsWazRsGidLDXLDXdRsMRWzppxJfY1b4xZlU1ajPi2XHEceYiX68Pzn/z/L5T58oLbM//P5ff7Lufed7//ccy4X7Zcwd5cOnmN8vMqeD/WrWBUzoObg4Fjr0SHxtnNDB8K5oclw1JxgO5AWba1JDLM8H+JXkdfbs8TXzdWkubh4aL7epVpy9GYtO+VLrSCjgSsr5Yg2MLoGx8bya34NI+jxft6TauJDLQpUeEOcrXKh77KTuA7j+AN5aaxjUeY1bWQWtKlC82UtKrhS6+TqLaf+eUbgT5j6lf97SFzduewkxsGyEh09gaPIG2ukNTkprFtRpnPYtpSfcVHz6VUsMX6aPWHqi+BqaxAQrWgzHK9lJjK10mcxPpuZwPPTWUkwJTcNtJ8Cr1SUybSQgGmI0k4Q3aTRft0+MKqWVpOLAFt4Bco9wp7NSpSia5Jg/rBU51BKxsYobqtRP5/7JdqN7S7vXuO+zoiz6YAIxQF1UCOsVGYinCGZE9gZczxbj3u+Q2tAst6heCi0H5XNRXE7w9h1GmG+qvXuMVwitm6PB/iUK1gFplaX4ISPFx7HaJzDY+1MZoL0iZCbn+4cRAGSx+s13IJaTjJo5ng8vENAw2ZabYLeXG3ZFH+fcuPqKhixsjI2IyT600MkMMVYI/ExVC3WWoUgISg9nanVS2Dn54dhz5F/wZyNb4D77Xl4cAfjNa00Qeehk2tfietod3n3HHeGQxm2g8wFqASUXkDHUyMizohjyr+Qk3L95AJAbJPhqbBp7044+Z/voGz28zBm5jTYi00cth6DLqNwK40wO7+fFNBvgkRuNjqwR9Ji6jggQhMEgRpXVUAjLAcV/pSKeRPxcAo9aVB+OnM2OYfPS4P+ZXcCWdRDZbgtQkHDc0bn4MfGRhj9l+l67uw3tNTYrRK72falRlodVpGAKJZARs/j9FimYHVlkOK4d29r+xRk8K1CsHNq3gRtGD4t3K7k+427A7rfXUgH1vm9pPyMeokt7DE/73J9FUkGcEdAgjOImmhR+1Z619YaoC1EK4uv15EznoILDRfBeu4sLP5rDaRPmSgONTaorr3uflKhuVGia5prry6m2Y9mNa8mQn2L4g3oQM0xjXGvNDiGncK3zcUVVdD48QGwnznNt4br6OHOJ1dQtMII2wNX+/cL5sD7Bz6Cq3Y7VGEj7fIGi63WmoxPwDQhsdpcXQIfFybrq+cIKIHTY6VUHAdn78jn0M7M/7d3O5+chPDd7yrk50ArwFctvUIzYiH50fH83qI/PY1nYGDrZ4A+AMlce3YxJb52GyShJv45Vwf7BlfVEVroG6W0aGarfBGuNTTwCZWdsTF495MrsMzSCHGTpzqdnEPhAS2ZOR0ar16BjiU54v2PwNRE3aUGmIJPUzPH8T9szn5D/1vgZfYvi19XzBLWlUDiutHw3p2pEjCGcT9YKYZDU3wSff3yRRJZ2Du1V2BC9feQXF4PKTMucu83cY3zyVH0iqRX5f6vjsAnx4/CA3Nnwt34Gn0Xt9G5ehv4jr0Nt0l669tIvUbDZ2bXxr9azAieGil9KV/ASuiTgwgavVJaDNRVzpLYtOLXYPwqAT5wRj0kowZSjIp68jPnk6szgICu+DToD9mOw7Ww+4vPYPF7b4PpftxWuYPEQW/tEHd2M/HtE7d2FIvDBhJeLYF4FPkF49PZyUFRDFeaA1N8QuanSnKZ2jYEP7KiQQcmJT3bLMq73zvZOQCBEaA8yLSl9E8J/CvcFvzIx9LAs2t7T617kndx/NpiaKn0FaPgc3MMO5FK4NRENJA/kRrJLr27mcOT/W7lJQS1GYTgCJ1oqEU+eRhhhjkFUYDiY0580PGPuTbgXUsywbo1GkoLPMq0fvdGVcStGQVCxdxTA7FrRrJZfxiiQ1tTo8A6KApOjc6V6ABbcM8TqHOJJpT8H9pwHYiDWsK2Ak9avjgB7HvDYe4jfSq1AVPTLLGrR0HM6pHM2ETM6iJG9X3D44HDS114+QWJDzBi7kVImG5rFoI65C3k8+Aip0C3oukvDgT7njBm3xMOG1/w3axFzMmxxq4eCc4UU13E7pmZw6zJEew4ypoSCZcP7efwX55tgniEIhGcittWHQQ+shXaFxc4hWtL7rebYXN1DMKHIHwIa9oTCsc2BFq16OoRLLYagVExXEU8pjrFVNtSnMAbOI4NqMO744urEIdAXNOkRxGo8MaasW6DiCe/Avd7pzgFdabCyalw/L1wsO8OZvbdIdw37QmG8+8H2rSYVUUQvQph0bemnHn5cHxgODuWFMY4PVrVjssQi+BKCtah5iTmzco4aPIu8H6wCiIfngKhE8ZC1zvzoettZggpTYe8R1LZ9FmJsP31SCBY++4g1rR7ADTtDuY5j9FrUasKWTRCOmoERK9EYRy1spBFoiofGATHksL1BhZt/1GHMyqmjbzlmKrRbykj0GZYpSChPQNoHOy7AvEJoMdYi1iQZ4tcWcCiCBhFMfmoFYU8p3rkigKWUpUPn6ZH4kfaKT7R5o8bIeaPdRD9xwvcEwj3xriFV9dGU81Q347bkZv9IociWPsuEzYSiHmgbABjrHEvYl7Tgl/KshIkKQJBdXD0SlQnTZ2UDj8e3MfnOo1/wAhISMA5V8ux6689cqaJ/yar/4hDNSEcATbLn1Gtue7PSEfX97dqvg8l1kQuL8RVFrCRywsc4ojl+YzE63jdwQ1L+WRkZcsvQhQCRCGU8Leu3Dn18tcArh17DuECENRRCAv2nX4ITcJY5tvmeVs0nzGRFQJOwPJmZE4KX5aHDZDPZ6QxFcVyOoCaQ1cg8pkLEIkgXBgTFK/dQOq6mkON8tcAmvanIaAvrjYBkvclaILlufBSWJ/7sEel5pHWv4wgOeiyfCDxZpYpiZqQyPed+VROCTBuWQNEIIgSQUU8818d1DjmeM0FvPei/BXcPufeUqBS/RG4H4q8LzTxGuUY7xIaleFWrHXo7OLJ4ZbmQ9jSXN5EOI+xKfRGUY2uyXl9HDRc+Z5PfKruGgx7yQbhCE3g4U8L3xxf0Gt0jaoNm22DU3iOyBoav8fVTyVYAfqPvjwm32T0XP3keF9m8u5g4p/TflOSLeFL8yRoHoQtyUV4zJeomqjzXNZm7q3ik5NRE6W4mgR3nWQDRo3Fa+keZfVf497nUATnw7h29qWaIffBJvpig6J+aHmvWg5P5pnjPykMwZRCFw9nzXmuQ52PLRa1+QfXSgRhmw42wtAX6yAUIcNQyiuNXVoPmwx7nmzjpyugzkLbQwc2yBuhjblQE2psnts4ia9p7d1cPIMrsm0hCEfigBKSfKgUjZE31uhJ0BYw2pHTTfDB51dg3gc/wPxtP2Bjlx1WnKyh8RLM3FMFb22JQKg+tMrovWXsjZAUK/XBvA/YP+zNSDSmbx9lXkVB5QoqtAphq4ax0KrhGKOwFizz4EXoZR4ixzNfvY9t/PJvEu3G9s/Tn0Dm2vtY5nIzwiKY0oe9EBCl5725JDyqJzUAK55yXyWxm42eQtCcrDoFFrIIRZ7HwxxygtZzGpN51trfwMzdVRzw24bvJC7wmGrz9q+BpJUl4l6878QH+FbRwXqhJxliC8UOY1z+3u0dV19ZjxFB5bjCfIIBi3KYDs69ksgHLKRx/kT0mOrBC4WoprwYN9aGsideS0QYL9wOBOZFoALS0kPGJC9Hj2PPlrmVS1zn5jc1tVZBKCn44IU5Usbxlrmxpq7PgaAFQzk8xYlVWXDi73gYJRQHtBCkF9aEt1s8Ga9ZemCOQn/09e7HJWbr5uLlZgqcbbYNWJADSjSp0ROM8NlMgZEXyuZjSi3zAQuGQsX6cITrgbAE5smuWjwwJ3nKmgcjf3VHd14jnX+nu83U2tZpae4pPmWB87MZSU0qhPF89CTMg9A3XyPGKNfr6Ck23pexJF1CNcOJ2EMCe4Bd9+4MY+6L0zuWSLybM6+CoBk0uTMFzsvSIfX6vOzrrlMy4fV0D2n9JvxUJjAFaOmO4MIL2G4I7U5NCWE8vbTTDIl1a+ZZYCrnYCgBITxJgZlewXgeNZXNpY/LXHnSmBX4DznBGdRkIVjHmn1HV8brO7rBs+M6tn1ob2RdonuV+M/KsCGoDhL4SjYEvJKJ8JmMYlULxGuoTqKc7jHmJ7bioUQ4AnNUV1QXrHeFq9s7Mzvq/JYuttI8lzKJ8fPMpYebyffZVCsHrETwSukx55AYB1SaUWJMlz5uZo+tjhZwHLQLECQHFzXht3cmDweWutWavNvd3IG9FfPIDyhXYP4IZarM5KD+FRQLr+KACjFGSl84CFcf3y4EKmCl3HRo+/ZO7PzbrrbppS4/bb/frNHT6HlP2CoCJUij/OYO4Q34VQzhYxjz+rI38d9ABERgghba1kmPz7/dsW56aYdyz67tPOU0v75RI92Sfcr6Pp5US+Ac+GWzLlEzw+AFgwi+WQS+zZWhYNvLHS0P395h0v8V3JlRM3TYPUuCKnpPjLH0m5ZipSZ852SwN97qjyvsYvt6nYt1w3MuNXMmdqgYm9du3C8DrWn/A/A1LCpUab7VAAAAAElFTkSuQmCC" InformativeScreenshot="cd91067fdbcce916309e60323e491f69.jpg" Selector="&lt;html app='chrome.exe' url='https://pizzaonline.dominos.co.in/?src=google_sem_brand&amp;amp;utm_source=google&amp;amp;utm_medium=cpc&amp;amp;utm_campaign=Brand-PanIndia-Desktop-Exact-2016-S&amp;amp;gad_source=1&amp;amp;gclid=CjwKCAjwko21BhAPEiwAwfaQCELf7gwBkc9cdPnT0EY2FncJWRijJ6ZqXvAsGlbTKBeEypY22DBaRRoCtd8QAvD_BwE' /&gt;" Title="Mcdonals - Google Search" Url="https://pizzaonline.dominos.co.in/?src=google_sem_brand&amp;utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=Brand-PanIndia-Desktop-Exact-2016-S&amp;gad_source=1&amp;gclid=CjwKCAjwko21BhAPEiwAwfaQCELf7gwBkc9cdPnT0EY2FncJWRijJ6ZqXvAsGlbTKBeEypY22DBaRRoCtd8QAvD_BwE" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
